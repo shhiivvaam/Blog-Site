@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     fetchBlogsPosts();
-  });
+  },[]);
 
   // TODO: remove the above function and change it to below one
   // useEffect(() => {
@@ -19,7 +19,7 @@ function App() {
   // });
 
   return (
-    <div className=''>
+    <div className='w-full h-full flex flex-col gap-y-1 justify-center items-center'>
       <Header />
       <Blogs />
       <Pagination />
